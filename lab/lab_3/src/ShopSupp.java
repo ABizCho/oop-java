@@ -1,8 +1,6 @@
-package lab.lab3;
-
 import java.util.Scanner;
 
-public class ShopSupp {   
+public class ShopSupp {
     // field
     private int[] idArr = {0,1,2,3,4};
     private int[] stockArr = {25,25,25,25,25};
@@ -31,7 +29,7 @@ public class ShopSupp {
         }
 
     }
-    
+
     public void viewUnitPrice(int pId) {
         System.out.println("Unit price: " + priceArr[pId]);
     }
@@ -62,21 +60,21 @@ public class ShopSupp {
         while(true) {
             System.out.println("Enter the number of menu you want\n1. Record\n2. ViewUnitPrice\n3. CalculateTotalPrice");
 
-            
+
             menuNum = scan.nextInt();
 
             switch(menuNum) {
-                case 1: 
+                case 1:
                     System.out.println("Insert product Id: ");
                     inId = scan.nextInt();
-            
+
                     System.out.println("Insert sold qunatity: ");
                     inNum = scan.nextInt();
-                    
-                    
+
+
                     supporter.delete(inId,inNum);
                     break;
-                
+
                 case 2:
                     System.out.println("Which item's price do you want to see?: ");
                     inId = scan.nextInt();
@@ -92,8 +90,8 @@ public class ShopSupp {
 
             }
             System.out.println("\n");
-            
+
         }
-        
+
     }
 }
