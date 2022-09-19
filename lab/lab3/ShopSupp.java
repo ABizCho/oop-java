@@ -11,12 +11,12 @@ public class ShopSupp {
 
     // sold info
     private int[] soldArr = {0,0,0,0,0};
-    private int[] soldPriceArr = {0,0,0,0,0};
+    private int[] cumSalesArr = {0,0,0,0,0};
 
     public void record(int pId, int soldNum){
         soldArr[pId] += soldNum;
-        soldPriceArr[pId] += soldNum * priceArr[pId];
-        System.out.println("* Successfully recorded on sold-Info system: { product Id:"+ pId + " | Cumulative sales of the item :" + soldPriceArr[pId] + " }");
+        cumSalesArr[pId] += soldNum * priceArr[pId];
+        System.out.println("* Successfully recorded on sold-Info system: { product Id:"+ pId + " | Cumulative sales of the item :" + cumSalesArr[pId] + " }");
     }
     public void delete(int pId, int soldNum){
         if ( minStockArr[pId] <= stockArr[pId] - soldNum){
@@ -40,7 +40,14 @@ public class ShopSupp {
         int total = 0;
         for(int id: idArr)
             total += soldArr[id] * priceArr[id];
-        System.out.println("Total Price: " + total);
+
+        System.out.println("-----Table of cumulative sales of items-----");
+        for(int id: idArr){
+            if (soldArr[id] != 0) {
+                System.out.println("-item "+id+": "+cumSalesArr[id]);
+            }
+        }
+        System.out.println("\nTotal Sales: " + total);
         System.exit(1);
     }
 
