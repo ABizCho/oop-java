@@ -90,6 +90,7 @@ public class ShopSupp {
 
             }
             System.out.println("\n");
+            scan.close();
 
         }
 
