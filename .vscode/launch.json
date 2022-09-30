@@ -1,0 +1,77 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShopSupp",
+            "request": "launch",
+            "mainClass": "ShopSupp",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTest",
+            "request": "launch",
+            "mainClass": "lab.lab_4.q1.src.AccountTest",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTest(1)",
+            "request": "launch",
+            "mainClass": "lab.lab_4.q2.src.AccountTest",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumFinder",
+            "request": "launch",
+            "mainClass": "lab.lab_4.q3.src.MaximumFinder",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumFinder(1)",
+            "request": "launch",
+            "mainClass": "lab.lab_4.q4.src.MaximumFinder",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodOverload",
+            "request": "launch",
+            "mainClass": "lab.lab_4.q5.MethodOverload",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTest(2)",
+            "request": "launch",
+            "mainClass": "lab.lab_5.q1.AccountTest",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "prac.ch1.Hello",
+            "projectName": "oop-java_5f7e15fa"
+        },
+        {
+            "type": "java",
+            "name": "Launch EmployeeTest",
+            "request": "launch",
+            "mainClass": "prac.ch4_1.EmployeeTest",
+            "projectName": "oop-java_5f7e15fa"
+        }
+    ]
+}
