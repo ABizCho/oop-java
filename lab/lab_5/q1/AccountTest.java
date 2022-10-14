@@ -7,12 +7,16 @@ public class AccountTest {
     {
         Account account1 = new Account("Jane Gree", 50.00);
         Account account2 = new Account("John Blue", -7.53);
+        Account account3 = new Account("Hong Kil-Dong");
 
         System.out.printf("%s balance: $%.2f%n", 
         account1.getName(), account1.getBalance());
         
         System.out.printf("%s balance: $%.2f%n", 
         account2.getName(), account2.getBalance());
+
+        System.out.printf("%s balance: $%.2f%n", 
+        account3.getName(), account3.getBalance());
 
         Scanner input = new Scanner(System.in);
 

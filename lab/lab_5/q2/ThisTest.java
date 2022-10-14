@@ -14,11 +14,11 @@ class SimpleTime
     private int minute;
     private int second;
 
-    public SimpleTime(int hour, int minute, int second)
+    public SimpleTime(int Hour, int Minute, int Second)
     {
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
+        hour = Hour;
+        minute = Minute;
+        second = Second;
     }
 
     public String buildString()
